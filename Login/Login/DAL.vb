@@ -15,7 +15,6 @@ Public Class DAL
         Dim command As New MySqlCommand
         command.Connection = openconnection()
         command.CommandText = "insert into jurusan values('','" & nama & "','" & kode & "')"
-
         Try
             If command.ExecuteNonQuery > 0 Then
                 closeconnection()
