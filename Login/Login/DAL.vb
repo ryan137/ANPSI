@@ -15,13 +15,22 @@ Public Class DAL
         Dim command As New MySqlCommand
         command.Connection = openconnection()
         command.CommandText = "insert into jurusan values('','" & nama & "','" & kode & "')"
-        If command.ExecuteNonQuery > 0 Then
+
+        Try
+            If command.ExecuteNonQuery > 0 Then
+                closeconnection()
+                Return "sukse insert"
+            Else
+                closeconnection()
+                Return "gagal insert"
+            End If
+        Catch ex As MySqlException
+
             closeconnection()
-            Return "sukse insert"
-        Else
-            closeconnection()
-            Return "gagal insert"
-        End If
+                Return "sukse insert"
+
+        End Try
+
     End Function
 
     Public Function updatejurusan(ByVal id As String, ByVal nama As String, ByVal kode As String)
