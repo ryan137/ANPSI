@@ -86,6 +86,43 @@ Public Class DAL
         Return data
     End Function
 
+    Public Function getuser(ByVal id As String)
+        Dim command As New MySqlCommand
+        Dim adp As New MySqlDataAdapter
+        Dim data As New DataSet
+        command.Connection = openconnection()
+        command.CommandText = "select * from user where user_id ='" & id & "'"
+        adp = New MySqlDataAdapter(command)
+        adp.Fill(data)
+        closeconnection()
+        Return data
+    End Function
+    Public Function updateuser(ByVal id As String, ByVal username As String, ByVal password As String)
+        Dim command As New MySqlCommand
+        command.Connection = openconnection()
+        command.CommandText = "update user set user_name='" & username & "', user_pass = '" & password & "' where user_id ='" & id & "'"
+        If command.ExecuteNonQuery > 0 Then
+            closeconnection()
+            Return "sukses update"
+        Else
+            closeconnection()
+            Return "gagal update"
+        End If
+    End Function
+
+    Public Function deleteuser(ByVal id As String)
+        Dim command As New MySqlCommand
+        command.Connection = openconnection()
+        command.CommandText = "delete from user where user_id='" & id & "' "
+        If command.ExecuteNonQuery > 0 Then
+            closeconnection()
+            Return "sukses hapus"
+        Else
+            closeconnection()
+            Return "gagal hapus"
+        End If
+    End Function
+
     Public Function insertuser(ByVal username As String, ByVal password As String)
         Dim command As New MySqlCommand
         command.Connection = openconnection()
