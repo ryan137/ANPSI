@@ -24,10 +24,10 @@ Partial Class Jurusan
     Private Sub InitializeComponent()
         Me.namajurusan = New MaterialSkin.Controls.MaterialSingleLineTextField()
         Me.MaterialLabel1 = New MaterialSkin.Controls.MaterialLabel()
-        Me.MaterialFlatButton1 = New MaterialSkin.Controls.MaterialFlatButton()
-        Me.MaterialFlatButton2 = New MaterialSkin.Controls.MaterialFlatButton()
-        Me.MaterialFlatButton3 = New MaterialSkin.Controls.MaterialFlatButton()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.MaterialRaisedButton1 = New MaterialSkin.Controls.MaterialRaisedButton()
+        Me.MaterialRaisedButton2 = New MaterialSkin.Controls.MaterialRaisedButton()
+        Me.MaterialRaisedButton3 = New MaterialSkin.Controls.MaterialRaisedButton()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -36,7 +36,7 @@ Partial Class Jurusan
         Me.namajurusan.BackColor = System.Drawing.Color.White
         Me.namajurusan.Depth = 0
         Me.namajurusan.Hint = ""
-        Me.namajurusan.Location = New System.Drawing.Point(12, 108)
+        Me.namajurusan.Location = New System.Drawing.Point(72, 78)
         Me.namajurusan.MaxLength = 32767
         Me.namajurusan.MouseState = MaterialSkin.MouseState.HOVER
         Me.namajurusan.Name = "namajurusan"
@@ -44,7 +44,7 @@ Partial Class Jurusan
         Me.namajurusan.SelectedText = ""
         Me.namajurusan.SelectionLength = 0
         Me.namajurusan.SelectionStart = 0
-        Me.namajurusan.Size = New System.Drawing.Size(550, 23)
+        Me.namajurusan.Size = New System.Drawing.Size(411, 23)
         Me.namajurusan.TabIndex = 3
         Me.namajurusan.TabStop = False
         Me.namajurusan.UseSystemPasswordChar = False
@@ -63,75 +63,73 @@ Partial Class Jurusan
         Me.MaterialLabel1.TabIndex = 9
         Me.MaterialLabel1.Text = "Search :"
         '
-        'MaterialFlatButton1
-        '
-        Me.MaterialFlatButton1.AutoSize = True
-        Me.MaterialFlatButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.MaterialFlatButton1.Depth = 0
-        Me.MaterialFlatButton1.Icon = Nothing
-        Me.MaterialFlatButton1.Location = New System.Drawing.Point(430, 140)
-        Me.MaterialFlatButton1.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
-        Me.MaterialFlatButton1.MouseState = MaterialSkin.MouseState.HOVER
-        Me.MaterialFlatButton1.Name = "MaterialFlatButton1"
-        Me.MaterialFlatButton1.Primary = False
-        Me.MaterialFlatButton1.Size = New System.Drawing.Size(56, 36)
-        Me.MaterialFlatButton1.TabIndex = 10
-        Me.MaterialFlatButton1.Text = "Back"
-        Me.MaterialFlatButton1.UseVisualStyleBackColor = True
-        '
-        'MaterialFlatButton2
-        '
-        Me.MaterialFlatButton2.AutoSize = True
-        Me.MaterialFlatButton2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.MaterialFlatButton2.Depth = 0
-        Me.MaterialFlatButton2.Icon = Nothing
-        Me.MaterialFlatButton2.Location = New System.Drawing.Point(494, 140)
-        Me.MaterialFlatButton2.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
-        Me.MaterialFlatButton2.MouseState = MaterialSkin.MouseState.HOVER
-        Me.MaterialFlatButton2.Name = "MaterialFlatButton2"
-        Me.MaterialFlatButton2.Primary = False
-        Me.MaterialFlatButton2.Size = New System.Drawing.Size(68, 36)
-        Me.MaterialFlatButton2.TabIndex = 11
-        Me.MaterialFlatButton2.Text = "Insert"
-        Me.MaterialFlatButton2.UseVisualStyleBackColor = True
-        '
-        'MaterialFlatButton3
-        '
-        Me.MaterialFlatButton3.AutoSize = True
-        Me.MaterialFlatButton3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.MaterialFlatButton3.Depth = 0
-        Me.MaterialFlatButton3.Icon = Nothing
-        Me.MaterialFlatButton3.Location = New System.Drawing.Point(12, 140)
-        Me.MaterialFlatButton3.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
-        Me.MaterialFlatButton3.MouseState = MaterialSkin.MouseState.HOVER
-        Me.MaterialFlatButton3.Name = "MaterialFlatButton3"
-        Me.MaterialFlatButton3.Primary = False
-        Me.MaterialFlatButton3.Size = New System.Drawing.Size(73, 36)
-        Me.MaterialFlatButton3.TabIndex = 12
-        Me.MaterialFlatButton3.Text = "Search"
-        Me.MaterialFlatButton3.UseVisualStyleBackColor = True
-        '
         'DataGridView1
         '
         Me.DataGridView1.AllowUserToAddRows = False
         Me.DataGridView1.AllowUserToDeleteRows = False
         Me.DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(12, 185)
+        Me.DataGridView1.Location = New System.Drawing.Point(12, 169)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.ReadOnly = True
         Me.DataGridView1.Size = New System.Drawing.Size(550, 197)
         Me.DataGridView1.TabIndex = 13
         '
+        'MaterialRaisedButton1
+        '
+        Me.MaterialRaisedButton1.AutoSize = True
+        Me.MaterialRaisedButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.MaterialRaisedButton1.Depth = 0
+        Me.MaterialRaisedButton1.Icon = Nothing
+        Me.MaterialRaisedButton1.Location = New System.Drawing.Point(489, 70)
+        Me.MaterialRaisedButton1.MouseState = MaterialSkin.MouseState.HOVER
+        Me.MaterialRaisedButton1.Name = "MaterialRaisedButton1"
+        Me.MaterialRaisedButton1.Primary = True
+        Me.MaterialRaisedButton1.Size = New System.Drawing.Size(73, 36)
+        Me.MaterialRaisedButton1.TabIndex = 14
+        Me.MaterialRaisedButton1.Text = "SEARCH"
+        Me.MaterialRaisedButton1.UseVisualStyleBackColor = True
+        '
+        'MaterialRaisedButton2
+        '
+        Me.MaterialRaisedButton2.AutoSize = True
+        Me.MaterialRaisedButton2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.MaterialRaisedButton2.Depth = 0
+        Me.MaterialRaisedButton2.Icon = Nothing
+        Me.MaterialRaisedButton2.Location = New System.Drawing.Point(12, 118)
+        Me.MaterialRaisedButton2.MouseState = MaterialSkin.MouseState.HOVER
+        Me.MaterialRaisedButton2.Name = "MaterialRaisedButton2"
+        Me.MaterialRaisedButton2.Primary = True
+        Me.MaterialRaisedButton2.Size = New System.Drawing.Size(56, 36)
+        Me.MaterialRaisedButton2.TabIndex = 15
+        Me.MaterialRaisedButton2.Text = "BACK"
+        Me.MaterialRaisedButton2.UseVisualStyleBackColor = True
+        '
+        'MaterialRaisedButton3
+        '
+        Me.MaterialRaisedButton3.AutoSize = True
+        Me.MaterialRaisedButton3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.MaterialRaisedButton3.Depth = 0
+        Me.MaterialRaisedButton3.Icon = Nothing
+        Me.MaterialRaisedButton3.Location = New System.Drawing.Point(494, 118)
+        Me.MaterialRaisedButton3.MouseState = MaterialSkin.MouseState.HOVER
+        Me.MaterialRaisedButton3.Name = "MaterialRaisedButton3"
+        Me.MaterialRaisedButton3.Primary = True
+        Me.MaterialRaisedButton3.Size = New System.Drawing.Size(68, 36)
+        Me.MaterialRaisedButton3.TabIndex = 16
+        Me.MaterialRaisedButton3.Text = "INSERT"
+        Me.MaterialRaisedButton3.UseVisualStyleBackColor = True
+        '
         'Jurusan
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(574, 394)
+        Me.BackColor = System.Drawing.Color.White
+        Me.ClientSize = New System.Drawing.Size(574, 377)
+        Me.Controls.Add(Me.MaterialRaisedButton3)
+        Me.Controls.Add(Me.MaterialRaisedButton2)
+        Me.Controls.Add(Me.MaterialRaisedButton1)
         Me.Controls.Add(Me.DataGridView1)
-        Me.Controls.Add(Me.MaterialFlatButton3)
-        Me.Controls.Add(Me.MaterialFlatButton2)
-        Me.Controls.Add(Me.MaterialFlatButton1)
         Me.Controls.Add(Me.MaterialLabel1)
         Me.Controls.Add(Me.namajurusan)
         Me.Name = "Jurusan"
@@ -143,8 +141,8 @@ Partial Class Jurusan
     End Sub
     Friend WithEvents namajurusan As MaterialSkin.Controls.MaterialSingleLineTextField
     Friend WithEvents MaterialLabel1 As MaterialSkin.Controls.MaterialLabel
-    Friend WithEvents MaterialFlatButton1 As MaterialSkin.Controls.MaterialFlatButton
-    Friend WithEvents MaterialFlatButton2 As MaterialSkin.Controls.MaterialFlatButton
-    Friend WithEvents MaterialFlatButton3 As MaterialSkin.Controls.MaterialFlatButton
     Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents MaterialRaisedButton1 As MaterialSkin.Controls.MaterialRaisedButton
+    Friend WithEvents MaterialRaisedButton2 As MaterialSkin.Controls.MaterialRaisedButton
+    Friend WithEvents MaterialRaisedButton3 As MaterialSkin.Controls.MaterialRaisedButton
 End Class
