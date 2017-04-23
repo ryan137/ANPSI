@@ -267,18 +267,6 @@ Public Class DAL
         Return data
     End Function
 
-    Public Function getnilaitest(ByVal id As String)
-        Dim command As New MySqlCommand
-        Dim adp As New MySqlDataAdapter
-        Dim data As New DataSet
-        command.Connection = openconnection()
-        command.CommandText = "SELECT a.mahasiswa_nama , a.mahasiswa_status , b.beasiswa_nama , c.test_nilai FROM mahasiswa a , beasiswa b , test c where a.mahasiswa_id = c.mahasiswa_id and a.beasiswa_id = b.beasiswa_id and a.mahasiswa_id ='" & id & "'"
-        adp = New MySqlDataAdapter(command)
-        adp.Fill(data)
-        closeconnection()
-        Return data
-    End Function
-
     Public Function getnilai(id)
         Dim command As New MySqlCommand
         Dim adp As New MySqlDataAdapter
@@ -310,7 +298,7 @@ Public Class DAL
         If wali.GetType() Is GetType(DataSet) Then
             data = wali
             command.Connection = openconnection()
-            command.CommandText = "insert into wali values('','" & data.Tables(0).Rows(0).Item("ayah_nama") & "','" & data.Tables(0).Rows(0).Item("ayah_tempatlahir") & "','" & Format(data.Tables(0).Rows(0).Item("ayah_tanggallahir"), "yyyy/MM/dd") & "','" & data.Tables(0).Rows(0).Item("ayah_pekerjaan") & "','" & data.Tables(0).Rows(0).Item("ayah_alamat") & "','" & data.Tables(0).Rows(0).Item("ayah_nohp") & "','" & data.Tables(0).Rows(0).Item("ibu_nama") & "','" & data.Tables(0).Rows(0).Item("ibu_tempatlahir") & "','" & Format(data.Tables(0).Rows(0).Item("ibu_tanggallahir"), "yyyy/MM/dd") & "','" & data.Tables(0).Rows(0).Item("ibu_pekerjaan") & "','" & data.Tables(0).Rows(0).Item("ibu_alamat") & "','" & data.Tables(0).Rows(0).Item("ibu_nohp") & "','" & data.Tables(0).Rows(0).Item("wali_nama") & "','" & data.Tables(0).Rows(0).Item("wali_tempatlahir") & "','" & Format(data.Tables(0).Rows(0).Item("wali_tanggallahir"), "yyyy/MM/dd") & "','" & data.Tables(0).Rows(0).Item("wali_pekerjaan") & "','" & data.Tables(0).Rows(0).Item("wali_alamat") & "','" & data.Tables(0).Rows(0).Item("wali_nohp") & "');select last_insert_id()"
+            command.CommandText = "insert into wali values('','" & data.Tables(0).Rows(0).Item("ayah_nama") & "','" & data.Tables(0).Rows(0).Item("ayah_tempatlahir") & "','" & Format(data.Tables(0).Rows(0).Item("ayah_tanggallahir"), "yyyy/MM/dd") & "','" & data.Tables(0).Rows(0).Item("ayah_pekerjaan") & "','" & data.Tables(0).Rows(0).Item("ayah_alamat") & "','" & data.Tables(0).Rows(0).Item("ayah_nohp") & "','" & data.Tables(0).Rows(0).Item("ibu_nama") & "','" & data.Tables(0).Rows(0).Item("ibu_tempatlahir") & "','" & Format(data.Tables(0).Rows(0).Item("ibu_tanggallahir"), "yyyy/MM/dd") & "','" & data.Tables(0).Rows(0).Item("ibu_pekerjaan") & "','" & data.Tables(0).Rows(0).Item("ibu_alamat") & "','" & data.Tables(0).Rows(0).Item("ibu_nohp") & "','" & data.Tables(0).Rows(0).Item("wali_nama") & "','" & data.Tables(0).Rows(0).Item("wali_tempatlahir") & "','" & data.Tables(0).Rows(0).Item("wali_tanggallahir") & "','" & data.Tables(0).Rows(0).Item("wali_pekerjaan") & "','" & data.Tables(0).Rows(0).Item("wali_alamat") & "','" & data.Tables(0).Rows(0).Item("wali_nohp") & "');select last_insert_id()"
             idwali = command.ExecuteScalar
             closeconnection()
         Else
@@ -492,7 +480,7 @@ Public Class DAL
         Dim adp As New MySqlDataAdapter
         Dim data As New DataSet
         command.Connection = openconnection()
-        command.CommandText = "select a.mahasiswa_id AS 'Mahasiswa ID' ,a.mahasiswa_nama AS Nama,b.test_nilai AS Nilai from mahasiswa a join test b on a.mahasiswa_id = b.mahasiswa_id"
+        command.CommandText = "select a.mahasiswa_id,a.mahasiswa_nama,b.test_nilai from mahasiswa a join test b on a.mahasiswa_id = b.mahasiswa_id"
         adp = New MySqlDataAdapter(command)
         adp.Fill(data)
         closeconnection()
@@ -581,7 +569,6 @@ Public Class DAL
         command.CommandText = "delete from test where mahasiswa_id =" & id
         If command.ExecuteNonQuery > 0 Then
             closeconnection()
-            command.Connection = openconnection()
             command.CommandText = "update mahasiswa set beasiswa_id=null ,mahasiswa_status ='Daftar' where mahasiswa_id='" & id & "'"
             If command.ExecuteNonQuery > 0 Then
                 closeconnection()

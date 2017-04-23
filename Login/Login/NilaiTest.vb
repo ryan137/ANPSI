@@ -18,7 +18,7 @@
         button.Name = ""
         DataGridView1.Columns.Add(button)
         DataGridView1.Columns.Add(button1)
-        DataGridView1.Columns.Item("Mahasiswa ID").Visible = False
+        DataGridView1.Columns.Item("mahasiswa_id").Visible = False
     End Sub
     Private Sub isidgv()
         Dim data As New DataSet
@@ -41,16 +41,12 @@
     Private Sub DataGridView1_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellClick
         If DataGridView1.Columns(e.ColumnIndex).Name = "" Then
             Dim edit As New EditNilaiTest
-            edit.id = DataGridView1.Rows(DataGridView1.CurrentRow.Index).Cells.Item("Mahasiswa ID").Value
+            edit.id = DataGridView1.Rows(DataGridView1.CurrentRow.Index).Cells.Item("mahasiswa_id").Value
             edit.Show()
             Me.Close()
         Else
-            MessageBox.Show(dal.deletetestnilai(DataGridView1.Rows(DataGridView1.CurrentRow.Index).Cells.Item("Mahasiswa ID").Value))
+            dal.deletetestnilai(DataGridView1.Rows(DataGridView1.CurrentRow.Index).Cells.Item("mahasiswa_id").Value)
             isidgv()
         End If
-    End Sub
-
-    Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
-
     End Sub
 End Class

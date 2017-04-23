@@ -46,7 +46,7 @@ Public Class InsertMahasiswa
     Private Sub DataGridView1_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellClick
         If DataGridView1.Columns(e.ColumnIndex).Name = "" Then
 
-
+            namasekolah.Text = DataGridView1.Rows(DataGridView1.CurrentRow.Index).Cells.Item("sekolah_id").Value
 
         End If
     End Sub
