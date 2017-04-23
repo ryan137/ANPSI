@@ -50,7 +50,7 @@ Partial Class insertjurusan
         Me.kodejurusan.BackColor = System.Drawing.Color.White
         Me.kodejurusan.Depth = 0
         Me.kodejurusan.Hint = ""
-        Me.kodejurusan.Location = New System.Drawing.Point(144, 112)
+        Me.kodejurusan.Location = New System.Drawing.Point(145, 112)
         Me.kodejurusan.MaxLength = 32767
         Me.kodejurusan.MouseState = MaterialSkin.MouseState.HOVER
         Me.kodejurusan.Name = "kodejurusan"
@@ -58,7 +58,7 @@ Partial Class insertjurusan
         Me.kodejurusan.SelectedText = ""
         Me.kodejurusan.SelectionLength = 0
         Me.kodejurusan.SelectionStart = 0
-        Me.kodejurusan.Size = New System.Drawing.Size(194, 23)
+        Me.kodejurusan.Size = New System.Drawing.Size(193, 23)
         Me.kodejurusan.TabIndex = 10
         Me.kodejurusan.TabStop = False
         Me.kodejurusan.UseSystemPasswordChar = False
