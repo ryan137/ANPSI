@@ -272,7 +272,7 @@ Public Class DAL
         Dim adp As New MySqlDataAdapter
         Dim data As New DataSet
         command.Connection = openconnection()
-        command.CommandText = "SELECT a.mahasiswa_nama , a.mahasiswa_status , b.beasiswa_nama , c.test_nilai FROM mahasiswa a , beasiswa b , test c where a.mahasiswa_id = c.mahasiswa_id and a.beasiswa_id = b.beasiswa_id and a.mahasiswa_id ='" & id & "'"
+        command.CommandText = "SELECT a.mahasiswa_nama , a.mahasiswa_status , b.beasiswa_nama , c.test_nilai FROM mahasiswa a , beasiswa b , test c where a.mahasiswa_id = c.mahasiswa_id and a.beasiswa_id = b.beasiswa_id and a.mahasiswa_id =" & id
         adp = New MySqlDataAdapter(command)
         adp.Fill(data)
         closeconnection()
@@ -470,7 +470,7 @@ Public Class DAL
             Else
                 status = "Gagal"
                 command.Connection = openconnection()
-                command.CommandText = "update mahasiswa set mahasiswa_status='" & status & "',beasiswa_id=null where mahasiswa_id='" & id & "'"
+                command.CommandText = "update mahasiswa set mahasiswa_status='" & status & "',beasiswa_id=14 where mahasiswa_id='" & id & "'"
                 If command.ExecuteNonQuery > 0 Then
                     closeconnection()
                     Return "sukses"
