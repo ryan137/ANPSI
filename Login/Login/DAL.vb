@@ -290,7 +290,7 @@ Public Class DAL
             idsekolah = command.ExecuteScalar()
             closeconnection()
         Else
-            idsekolah = wali
+            idsekolah = asalsekolah
         End If
 
 
@@ -328,6 +328,52 @@ Public Class DAL
             End If
         Else
             Return "gagal insert wali sekolah"
+        End If
+    End Function
+
+    Public Function updatemahasiswa(mahasiswa, wali, asalsekolah, nilai, jurusan)
+        Dim idsekolah, idwali, idmahasiswa As String
+        Dim data As New DataSet
+        Dim command As New MySqlCommand
+
+        idsekolah = asalsekolah
+
+        If wali.GetType() Is GetType(DataSet) Then
+            data = wali
+            command.Connection = openconnection()
+            command.CommandText = "update wali set ayah_nama = '" & data.Tables(0).Rows(0).Item("ayah_nama") & "', ayah_tempatlahir = '" & data.Tables(0).Rows(0).Item("ayah_tempatlahir") & "', ayah_tanggallahir = '" & Format(data.Tables(0).Rows(0).Item("ayah_tanggallahir"), "yyyy/MM/dd") & "', ayah_pekerjaan = '" & data.Tables(0).Rows(0).Item("ayah_pekerjaan") & "', ayah_alamat = '" & data.Tables(0).Rows(0).Item("ayah_alamat") & "', ayah_nohp = '" & data.Tables(0).Rows(0).Item("ayah_nohp") & "', ibu_nama = '" & data.Tables(0).Rows(0).Item("ibu_nama") & "', ibu_tempatlahir = '" & data.Tables(0).Rows(0).Item("ibu_tempatlahir") & "', ibu_tanggallahir = '" & Format(data.Tables(0).Rows(0).Item("ibu_tanggallahir"), "yyyy/MM/dd") & "', ibu_pekerjaan = '" & data.Tables(0).Rows(0).Item("ibu_pekerjaan") & "', ibu_alamat = '" & data.Tables(0).Rows(0).Item("ibu_alamat") & "', ibu_nohp = '" & data.Tables(0).Rows(0).Item("ibu_nohp") & "', wali_nama = '" & data.Tables(0).Rows(0).Item("wali_nama") & "', wali_tempatlahir = '" & data.Tables(0).Rows(0).Item("wali_tempatlahir") & "', wali_tanggallahir = '" & Format(data.Tables(0).Rows(0).Item("wali_tanggallahir"), "yyyy/MM/dd") & "', wali_pekerjaan = '" & data.Tables(0).Rows(0).Item("wali_pekerjaan") & "', wali_alamat = '" & data.Tables(0).Rows(0).Item("wali_alamat") & "', wali_nohp = '" & data.Tables(0).Rows(0).Item("wali_nohp") & "' where wali_id = '" & data.Tables(0).Rows(0).Item("wali_id") & "'"
+            command.ExecuteScalar()
+            idwali = data.Tables(0).Rows(0).Item("wali_id")
+            closeconnection()
+        Else
+            idwali = wali
+        End If
+
+
+
+        If idsekolah IsNot Nothing And idwali IsNot Nothing Then
+            data = mahasiswa
+            command.Connection = openconnection()
+            command.CommandText = "update mahasiswa set mahasiswa_nama = '" & data.Tables(0).Rows(0).Item("mahasiswa_nama") & "', mahasiswa_tempatlahir = '" & data.Tables(0).Rows(0).Item("mahasiswa_tempatlahir") & "', mahasiswa_tanggallahir = '" & Format(data.Tables(0).Rows(0).Item("mahasiswa_tanggallahir"), "yyyy/MM/dd") & "', mahasiswa_jeniskelamin = '" & data.Tables(0).Rows(0).Item("mahasiswa_jeniskelamin") & "', mahasiswa_alamat = '" & data.Tables(0).Rows(0).Item("mahasiswa_alamat") & "', mahasiswa_nohp = '" & data.Tables(0).Rows(0).Item("mahasiswa_nohp") & "', mahasiswa_email = '" & data.Tables(0).Rows(0).Item("mahasiswa_email") & "', wali_id = '" & idwali & "', sekolah_id = '" & idsekolah & "', jurusan_id = '" & jurusan & "',beasiswa_id = null, tgl_daftar = '" & Format(DateTime.Now, "yyyy/MM/dd") & "', mahasiswa_status = 'Daftar' where mahasiswa_id = '" & data.Tables(0).Rows(0).Item("mahasiswa_id") & "'"
+            command.ExecuteScalar()
+            idmahasiswa = data.Tables(0).Rows(0).Item("mahasiswa_id")
+            closeconnection()
+            If idmahasiswa IsNot Nothing Then
+                data = nilai
+                command.Connection = openconnection()
+                command.CommandText = "update nilai set nilai_mtk = '" & data.Tables(0).Rows(0).Item("nilai_mtk") & "', nilai_bind = '" & data.Tables(0).Rows(0).Item("nilai_bind") & "', nilai_bing = '" & data.Tables(0).Rows(0).Item("nilai_bing") & "', nilai_jurusan = '" & data.Tables(0).Rows(0).Item("nilai_jurusan") & "' where mahasiswa_id = '" & idmahasiswa & "'"
+
+                If command.ExecuteNonQuery() > 0 Then
+                    closeconnection()
+                    Return "update berhasil"
+                Else
+                    Return "gagal update nilai"
+                End If
+            Else
+                Return "Gagal update mahasiswa"
+            End If
+        Else
+            Return "gagal update wali sekolah"
         End If
     End Function
 
