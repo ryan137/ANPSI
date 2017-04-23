@@ -86,6 +86,18 @@ Public Class DAL
         Return data
     End Function
 
+    Public Function getuser(ByVal id As String)
+        Dim command As New MySqlCommand
+        Dim adp As New MySqlDataAdapter
+        Dim data As New DataSet
+        command.Connection = openconnection()
+        command.CommandText = "select * from user where user_id ='" & id & "'"
+        adp = New MySqlDataAdapter(command)
+        adp.Fill(data)
+        closeconnection()
+        Return data
+    End Function
+
     Public Function insertuser(ByVal username As String, ByVal password As String)
         Dim command As New MySqlCommand
         command.Connection = openconnection()

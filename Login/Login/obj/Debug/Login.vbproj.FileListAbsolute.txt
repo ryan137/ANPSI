@@ -78,3 +78,7 @@ C:\Users\Kevin\Desktop\AnPSI\Login\Login\obj\Debug\Login.NilaiTest.resources
 C:\Users\Kevin\Desktop\AnPSI\Login\Login\obj\Debug\Login.SUMenu.resources
 C:\Users\Kevin\Desktop\AnPSI\Login\Login\obj\Debug\Login.User.resources
 C:\Users\Kevin\Desktop\AnPSI\Login\Login\obj\Debug\Login.vbproj.GenerateResource.Cache
+C:\Users\asus\Documents\GitHub\ANPSI\Login\Login\bin\Debug\Login.exe.config
+C:\Users\asus\Documents\GitHub\ANPSI\Login\Login\obj\Debug\Login.exe
+C:\Users\asus\Documents\GitHub\ANPSI\Login\Login\obj\Debug\Login.xml
+C:\Users\asus\Documents\GitHub\ANPSI\Login\Login\obj\Debug\Login.pdb
