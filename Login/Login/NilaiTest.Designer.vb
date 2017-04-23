@@ -1,6 +1,6 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
 Partial Class NilaiTest
-    Inherits System.Windows.Forms.Form
+    Inherits MaterialSkin.Controls.MaterialForm
 
     'Form overrides dispose to clean up the component list.
     <System.Diagnostics.DebuggerNonUserCode()> _
@@ -22,55 +22,35 @@ Partial Class NilaiTest
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.MaterialRaisedButton1 = New MaterialSkin.Controls.MaterialRaisedButton()
-        Me.MaterialLabel1 = New MaterialSkin.Controls.MaterialLabel()
-        Me.nama = New MaterialSkin.Controls.MaterialSingleLineTextField()
         Me.MaterialRaisedButton2 = New MaterialSkin.Controls.MaterialRaisedButton()
+        Me.nama = New MaterialSkin.Controls.MaterialSingleLineTextField()
+        Me.MaterialLabel1 = New MaterialSkin.Controls.MaterialLabel()
+        Me.MaterialRaisedButton1 = New MaterialSkin.Controls.MaterialRaisedButton()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'DataGridView1
+        'MaterialRaisedButton2
         '
-        Me.DataGridView1.AllowUserToAddRows = False
-        Me.DataGridView1.AllowUserToDeleteRows = False
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(12, 99)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.ReadOnly = True
-        Me.DataGridView1.Size = New System.Drawing.Size(413, 210)
-        Me.DataGridView1.TabIndex = 0
-        '
-        'MaterialRaisedButton1
-        '
-        Me.MaterialRaisedButton1.Depth = 0
-        Me.MaterialRaisedButton1.Location = New System.Drawing.Point(12, 70)
-        Me.MaterialRaisedButton1.MouseState = MaterialSkin.MouseState.HOVER
-        Me.MaterialRaisedButton1.Name = "MaterialRaisedButton1"
-        Me.MaterialRaisedButton1.Primary = True
-        Me.MaterialRaisedButton1.Size = New System.Drawing.Size(75, 23)
-        Me.MaterialRaisedButton1.TabIndex = 1
-        Me.MaterialRaisedButton1.Text = "Insert"
-        Me.MaterialRaisedButton1.UseVisualStyleBackColor = True
-        '
-        'MaterialLabel1
-        '
-        Me.MaterialLabel1.AutoSize = True
-        Me.MaterialLabel1.Depth = 0
-        Me.MaterialLabel1.Font = New System.Drawing.Font("Roboto", 11.0!)
-        Me.MaterialLabel1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.MaterialLabel1.Location = New System.Drawing.Point(13, 13)
-        Me.MaterialLabel1.MouseState = MaterialSkin.MouseState.HOVER
-        Me.MaterialLabel1.Name = "MaterialLabel1"
-        Me.MaterialLabel1.Size = New System.Drawing.Size(49, 19)
-        Me.MaterialLabel1.TabIndex = 2
-        Me.MaterialLabel1.Text = "Nama"
+        Me.MaterialRaisedButton2.AutoSize = True
+        Me.MaterialRaisedButton2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.MaterialRaisedButton2.Depth = 0
+        Me.MaterialRaisedButton2.Icon = Nothing
+        Me.MaterialRaisedButton2.Location = New System.Drawing.Point(311, 98)
+        Me.MaterialRaisedButton2.MouseState = MaterialSkin.MouseState.HOVER
+        Me.MaterialRaisedButton2.Name = "MaterialRaisedButton2"
+        Me.MaterialRaisedButton2.Primary = True
+        Me.MaterialRaisedButton2.Size = New System.Drawing.Size(73, 36)
+        Me.MaterialRaisedButton2.TabIndex = 9
+        Me.MaterialRaisedButton2.Text = "Search"
+        Me.MaterialRaisedButton2.UseVisualStyleBackColor = True
         '
         'nama
         '
         Me.nama.Depth = 0
         Me.nama.Hint = ""
-        Me.nama.Location = New System.Drawing.Point(113, 13)
+        Me.nama.Location = New System.Drawing.Point(113, 69)
+        Me.nama.MaxLength = 32767
         Me.nama.MouseState = MaterialSkin.MouseState.HOVER
         Me.nama.Name = "nama"
         Me.nama.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -78,26 +58,56 @@ Partial Class NilaiTest
         Me.nama.SelectionLength = 0
         Me.nama.SelectionStart = 0
         Me.nama.Size = New System.Drawing.Size(273, 23)
-        Me.nama.TabIndex = 3
+        Me.nama.TabIndex = 8
+        Me.nama.TabStop = False
         Me.nama.UseSystemPasswordChar = False
         '
-        'MaterialRaisedButton2
+        'MaterialLabel1
         '
-        Me.MaterialRaisedButton2.Depth = 0
-        Me.MaterialRaisedButton2.Location = New System.Drawing.Point(311, 42)
-        Me.MaterialRaisedButton2.MouseState = MaterialSkin.MouseState.HOVER
-        Me.MaterialRaisedButton2.Name = "MaterialRaisedButton2"
-        Me.MaterialRaisedButton2.Primary = True
-        Me.MaterialRaisedButton2.Size = New System.Drawing.Size(75, 23)
-        Me.MaterialRaisedButton2.TabIndex = 4
-        Me.MaterialRaisedButton2.Text = "Search"
-        Me.MaterialRaisedButton2.UseVisualStyleBackColor = True
+        Me.MaterialLabel1.AutoSize = True
+        Me.MaterialLabel1.Depth = 0
+        Me.MaterialLabel1.Font = New System.Drawing.Font("Roboto", 11.0!)
+        Me.MaterialLabel1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.MaterialLabel1.Location = New System.Drawing.Point(13, 69)
+        Me.MaterialLabel1.MouseState = MaterialSkin.MouseState.HOVER
+        Me.MaterialLabel1.Name = "MaterialLabel1"
+        Me.MaterialLabel1.Size = New System.Drawing.Size(49, 19)
+        Me.MaterialLabel1.TabIndex = 7
+        Me.MaterialLabel1.Text = "Nama"
+        '
+        'MaterialRaisedButton1
+        '
+        Me.MaterialRaisedButton1.AutoSize = True
+        Me.MaterialRaisedButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.MaterialRaisedButton1.Depth = 0
+        Me.MaterialRaisedButton1.Icon = Nothing
+        Me.MaterialRaisedButton1.Location = New System.Drawing.Point(12, 98)
+        Me.MaterialRaisedButton1.MouseState = MaterialSkin.MouseState.HOVER
+        Me.MaterialRaisedButton1.Name = "MaterialRaisedButton1"
+        Me.MaterialRaisedButton1.Primary = True
+        Me.MaterialRaisedButton1.Size = New System.Drawing.Size(68, 36)
+        Me.MaterialRaisedButton1.TabIndex = 6
+        Me.MaterialRaisedButton1.Text = "Insert"
+        Me.MaterialRaisedButton1.UseVisualStyleBackColor = True
+        '
+        'DataGridView1
+        '
+        Me.DataGridView1.AllowUserToAddRows = False
+        Me.DataGridView1.AllowUserToDeleteRows = False
+        Me.DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Location = New System.Drawing.Point(12, 155)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.ReadOnly = True
+        Me.DataGridView1.RowHeadersVisible = False
+        Me.DataGridView1.Size = New System.Drawing.Size(413, 210)
+        Me.DataGridView1.TabIndex = 5
         '
         'NilaiTest
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(437, 321)
+        Me.ClientSize = New System.Drawing.Size(574, 377)
         Me.Controls.Add(Me.MaterialRaisedButton2)
         Me.Controls.Add(Me.nama)
         Me.Controls.Add(Me.MaterialLabel1)
@@ -111,9 +121,9 @@ Partial Class NilaiTest
 
     End Sub
 
-    Friend WithEvents DataGridView1 As DataGridView
-    Friend WithEvents MaterialRaisedButton1 As MaterialSkin.Controls.MaterialRaisedButton
-    Friend WithEvents MaterialLabel1 As MaterialSkin.Controls.MaterialLabel
-    Friend WithEvents nama As MaterialSkin.Controls.MaterialSingleLineTextField
     Friend WithEvents MaterialRaisedButton2 As MaterialSkin.Controls.MaterialRaisedButton
+    Friend WithEvents nama As MaterialSkin.Controls.MaterialSingleLineTextField
+    Friend WithEvents MaterialLabel1 As MaterialSkin.Controls.MaterialLabel
+    Friend WithEvents MaterialRaisedButton1 As MaterialSkin.Controls.MaterialRaisedButton
+    Friend WithEvents DataGridView1 As DataGridView
 End Class
