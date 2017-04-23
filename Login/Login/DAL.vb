@@ -25,10 +25,8 @@ Public Class DAL
                 Return "gagal insert"
             End If
         Catch ex As MySqlException
-
             closeconnection()
-                Return "sukse insert"
-
+            Return "gagal insert"
         End Try
 
     End Function
