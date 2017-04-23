@@ -104,3 +104,4 @@ C:\Users\asus\Documents\GitHub\ANPSI\Login\Login\bin\Debug\Login.pdb
 C:\Users\asus\Documents\GitHub\ANPSI\Login\Login\bin\Debug\Login.xml
 C:\Users\asus\Documents\GitHub\ANPSI\Login\Login\bin\Debug\MaterialSkin.dll
 C:\Users\asus\Documents\GitHub\ANPSI\Login\Login\bin\Debug\MySql.Data.xml
+C:\Users\asus\Documents\GitHub\ANPSI\Login\Login\obj\Debug\Login.editmahasiswa.resources

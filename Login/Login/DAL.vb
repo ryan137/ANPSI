@@ -325,6 +325,19 @@ Public Class DAL
         End If
     End Function
 
+    Public Function deletemahasiswa(ByVal id As String)
+        Dim command As New MySqlCommand
+        command.Connection = openconnection()
+        command.CommandText = "delete from mahasiswa where mahasiswa_id ='" & id & "'"
+        If command.ExecuteNonQuery > 0 Then
+            closeconnection()
+            Return "Sukses hapus"
+        Else
+            closeconnection()
+            Return "gagal hapus"
+        End If
+    End Function
+
     Public Function getallmahasiswa()
         Dim command As New MySqlCommand
         Dim adp As New MySqlDataAdapter
