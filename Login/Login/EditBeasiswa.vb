@@ -12,6 +12,9 @@
 
     Private Sub MaterialRaisedButton1_Click(sender As Object, e As EventArgs) Handles MaterialRaisedButton1.Click
         MessageBox.Show(dal.updatebeasiwa(id, nama.Text, bpp.Text, sks.Text))
+        Dim beasiswa As New Beasiswa
+        beasiswa.Show()
+        Me.Close()
     End Sub
 
     Private Sub MaterialRaisedButton2_Click(sender As Object, e As EventArgs) Handles MaterialRaisedButton2.Click
