@@ -26,4 +26,18 @@
         data = dal.getallmahasiswa
         DataGridView1.DataSource = data.Tables(0)
     End Sub
+
+
+
+    Private Sub DataGridView1_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellClick
+        If DataGridView1.Columns(e.ColumnIndex).Name = "" Then
+            Dim edit As New editmahasiswa
+            edit.id = DataGridView1.Rows(DataGridView1.CurrentRow.Index).Cells.Item("mahasiswa_id").Value
+            edit.Show()
+            Me.Close()
+        ElseIf DataGridView1.Columns(e.ColumnIndex).Name = " " Then
+            MessageBox.Show(dal.deletemahasiswa(DataGridView1.Rows(DataGridView1.CurrentRow.Index).Cells.Item("mahasiswa_id").Value))
+            isidgv()
+        End If
+    End Sub
 End Class

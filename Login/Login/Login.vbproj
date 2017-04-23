@@ -104,6 +104,12 @@
     <Compile Include="editjurusan.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="editmahasiswa.Designer.vb">
+      <DependentUpon>editmahasiswa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="editmahasiswa.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="EditNilaiTest.Designer.vb">
       <DependentUpon>EditNilaiTest.vb</DependentUpon>
     </Compile>
@@ -196,6 +202,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="editjurusan.resx">
       <DependentUpon>editjurusan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="editmahasiswa.resx">
+      <DependentUpon>editmahasiswa.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EditNilaiTest.resx">
       <DependentUpon>EditNilaiTest.vb</DependentUpon>
