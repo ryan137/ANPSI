@@ -41,4 +41,8 @@
         SUMenu.Show()
         Me.Close()
     End Sub
+
+    Private Sub MaterialLabel5_Click(sender As Object, e As EventArgs) Handles MaterialLabel5.Click
+
+    End Sub
 End Class

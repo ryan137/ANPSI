@@ -9,16 +9,20 @@
     Public id As String
 
     Private Sub MaterialRaisedButton1_Click(sender As Object, e As EventArgs) Handles MaterialRaisedButton1.Click
-
         MessageBox.Show(dal.updatejurusan(id, nama.Text, kode.Text))
-
+        Dim jurusan As New Jurusan
+        jurusan.Show()
+        Me.Close()
 
     End Sub
 
     Private Sub MaterialRaisedButton2_Click(sender As Object, e As EventArgs) Handles MaterialRaisedButton2.Click
-
         Dim jurusan As New Jurusan
         jurusan.Show()
         Me.Close()
+    End Sub
+
+    Private Sub MaterialLabel3_Click(sender As Object, e As EventArgs) Handles MaterialLabel3.Click
+
     End Sub
 End Class

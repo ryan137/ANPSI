@@ -31,4 +31,10 @@
         nilaitest.Show()
         Me.Close()
     End Sub
+
+    Private Sub MaterialFlatButton6_Click(sender As Object, e As EventArgs) Handles MaterialFlatButton6.Click
+        Dim sekolah As New Sekolah
+        sekolah.Show()
+        Me.Close()
+    End Sub
 End Class

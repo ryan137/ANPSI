@@ -38,7 +38,7 @@ Partial Class editjurusan
         Me.MaterialLabel1.Depth = 0
         Me.MaterialLabel1.Font = New System.Drawing.Font("Roboto", 11.0!)
         Me.MaterialLabel1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.MaterialLabel1.Location = New System.Drawing.Point(12, 76)
+        Me.MaterialLabel1.Location = New System.Drawing.Point(12, 73)
         Me.MaterialLabel1.MouseState = MaterialSkin.MouseState.HOVER
         Me.MaterialLabel1.Name = "MaterialLabel1"
         Me.MaterialLabel1.Size = New System.Drawing.Size(49, 19)
@@ -51,7 +51,7 @@ Partial Class editjurusan
         Me.MaterialLabel2.Depth = 0
         Me.MaterialLabel2.Font = New System.Drawing.Font("Roboto", 11.0!)
         Me.MaterialLabel2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.MaterialLabel2.Location = New System.Drawing.Point(12, 116)
+        Me.MaterialLabel2.Location = New System.Drawing.Point(12, 112)
         Me.MaterialLabel2.MouseState = MaterialSkin.MouseState.HOVER
         Me.MaterialLabel2.Name = "MaterialLabel2"
         Me.MaterialLabel2.Size = New System.Drawing.Size(43, 19)
@@ -64,7 +64,7 @@ Partial Class editjurusan
         Me.MaterialRaisedButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.MaterialRaisedButton1.Depth = 0
         Me.MaterialRaisedButton1.Icon = Nothing
-        Me.MaterialRaisedButton1.Location = New System.Drawing.Point(222, 145)
+        Me.MaterialRaisedButton1.Location = New System.Drawing.Point(289, 141)
         Me.MaterialRaisedButton1.MouseState = MaterialSkin.MouseState.HOVER
         Me.MaterialRaisedButton1.Name = "MaterialRaisedButton1"
         Me.MaterialRaisedButton1.Primary = True
@@ -77,7 +77,7 @@ Partial Class editjurusan
         '
         Me.nama.Depth = 0
         Me.nama.Hint = ""
-        Me.nama.Location = New System.Drawing.Point(92, 76)
+        Me.nama.Location = New System.Drawing.Point(145, 76)
         Me.nama.MaxLength = 32767
         Me.nama.MouseState = MaterialSkin.MouseState.HOVER
         Me.nama.Name = "nama"
@@ -85,7 +85,7 @@ Partial Class editjurusan
         Me.nama.SelectedText = ""
         Me.nama.SelectionLength = 0
         Me.nama.SelectionStart = 0
-        Me.nama.Size = New System.Drawing.Size(180, 23)
+        Me.nama.Size = New System.Drawing.Size(194, 23)
         Me.nama.TabIndex = 3
         Me.nama.TabStop = False
         Me.nama.UseSystemPasswordChar = False
@@ -94,7 +94,7 @@ Partial Class editjurusan
         '
         Me.kode.Depth = 0
         Me.kode.Hint = ""
-        Me.kode.Location = New System.Drawing.Point(92, 116)
+        Me.kode.Location = New System.Drawing.Point(144, 112)
         Me.kode.MaxLength = 32767
         Me.kode.MouseState = MaterialSkin.MouseState.HOVER
         Me.kode.Name = "kode"
@@ -102,7 +102,7 @@ Partial Class editjurusan
         Me.kode.SelectedText = ""
         Me.kode.SelectionLength = 0
         Me.kode.SelectionStart = 0
-        Me.kode.Size = New System.Drawing.Size(180, 23)
+        Me.kode.Size = New System.Drawing.Size(194, 23)
         Me.kode.TabIndex = 4
         Me.kode.TabStop = False
         Me.kode.UseSystemPasswordChar = False
@@ -113,7 +113,7 @@ Partial Class editjurusan
         Me.MaterialRaisedButton2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.MaterialRaisedButton2.Depth = 0
         Me.MaterialRaisedButton2.Icon = Nothing
-        Me.MaterialRaisedButton2.Location = New System.Drawing.Point(12, 145)
+        Me.MaterialRaisedButton2.Location = New System.Drawing.Point(16, 141)
         Me.MaterialRaisedButton2.MouseState = MaterialSkin.MouseState.HOVER
         Me.MaterialRaisedButton2.Name = "MaterialRaisedButton2"
         Me.MaterialRaisedButton2.Primary = True
@@ -128,7 +128,7 @@ Partial Class editjurusan
         Me.MaterialLabel3.Depth = 0
         Me.MaterialLabel3.Font = New System.Drawing.Font("Roboto", 11.0!)
         Me.MaterialLabel3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.MaterialLabel3.Location = New System.Drawing.Point(67, 76)
+        Me.MaterialLabel3.Location = New System.Drawing.Point(95, 73)
         Me.MaterialLabel3.MouseState = MaterialSkin.MouseState.HOVER
         Me.MaterialLabel3.Name = "MaterialLabel3"
         Me.MaterialLabel3.Size = New System.Drawing.Size(13, 19)
@@ -141,7 +141,7 @@ Partial Class editjurusan
         Me.MaterialLabel4.Depth = 0
         Me.MaterialLabel4.Font = New System.Drawing.Font("Roboto", 11.0!)
         Me.MaterialLabel4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.MaterialLabel4.Location = New System.Drawing.Point(67, 116)
+        Me.MaterialLabel4.Location = New System.Drawing.Point(95, 112)
         Me.MaterialLabel4.MouseState = MaterialSkin.MouseState.HOVER
         Me.MaterialLabel4.Name = "MaterialLabel4"
         Me.MaterialLabel4.Size = New System.Drawing.Size(13, 19)
@@ -153,7 +153,7 @@ Partial Class editjurusan
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(284, 191)
+        Me.ClientSize = New System.Drawing.Size(350, 185)
         Me.Controls.Add(Me.MaterialLabel4)
         Me.Controls.Add(Me.MaterialLabel3)
         Me.Controls.Add(Me.MaterialRaisedButton2)

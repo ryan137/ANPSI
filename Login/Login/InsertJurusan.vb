@@ -2,6 +2,9 @@
     Dim dal As New DAL
     Private Sub MaterialRaisedButton1_Click(sender As Object, e As EventArgs) Handles MaterialRaisedButton1.Click
         MessageBox.Show(dal.insertjurusan(namajurusan.Text, kodejurusan.Text))
+        Dim jurusan As New Jurusan
+        jurusan.Show()
+        Me.Close()
     End Sub
 
     Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs)
@@ -16,5 +19,9 @@
         Dim jurusan As New Jurusan
         jurusan.Show()
         Me.Close()
+    End Sub
+
+    Private Sub namajurusan_Click(sender As Object, e As EventArgs) Handles namajurusan.Click
+
     End Sub
 End Class
