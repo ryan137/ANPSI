@@ -27,6 +27,7 @@ Partial Class SUMenu
         Me.MaterialFlatButton3 = New MaterialSkin.Controls.MaterialFlatButton()
         Me.MaterialFlatButton4 = New MaterialSkin.Controls.MaterialFlatButton()
         Me.MaterialFlatButton5 = New MaterialSkin.Controls.MaterialFlatButton()
+        Me.MaterialFlatButton6 = New MaterialSkin.Controls.MaterialFlatButton()
         Me.SuspendLayout()
         '
         'MaterialFlatButton1
@@ -109,11 +110,28 @@ Partial Class SUMenu
         Me.MaterialFlatButton5.Text = "Input Nilai Test"
         Me.MaterialFlatButton5.UseVisualStyleBackColor = True
         '
+        'MaterialFlatButton6
+        '
+        Me.MaterialFlatButton6.AutoSize = True
+        Me.MaterialFlatButton6.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.MaterialFlatButton6.Depth = 0
+        Me.MaterialFlatButton6.Icon = Nothing
+        Me.MaterialFlatButton6.Location = New System.Drawing.Point(515, 75)
+        Me.MaterialFlatButton6.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
+        Me.MaterialFlatButton6.MouseState = MaterialSkin.MouseState.HOVER
+        Me.MaterialFlatButton6.Name = "MaterialFlatButton6"
+        Me.MaterialFlatButton6.Primary = False
+        Me.MaterialFlatButton6.Size = New System.Drawing.Size(81, 36)
+        Me.MaterialFlatButton6.TabIndex = 5
+        Me.MaterialFlatButton6.Text = "SEKOLAH"
+        Me.MaterialFlatButton6.UseVisualStyleBackColor = True
+        '
         'SUMenu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(520, 126)
+        Me.ClientSize = New System.Drawing.Size(608, 126)
+        Me.Controls.Add(Me.MaterialFlatButton6)
         Me.Controls.Add(Me.MaterialFlatButton5)
         Me.Controls.Add(Me.MaterialFlatButton4)
         Me.Controls.Add(Me.MaterialFlatButton3)
@@ -131,4 +149,5 @@ Partial Class SUMenu
     Friend WithEvents MaterialFlatButton3 As MaterialSkin.Controls.MaterialFlatButton
     Friend WithEvents MaterialFlatButton4 As MaterialSkin.Controls.MaterialFlatButton
     Friend WithEvents MaterialFlatButton5 As MaterialSkin.Controls.MaterialFlatButton
+    Friend WithEvents MaterialFlatButton6 As MaterialSkin.Controls.MaterialFlatButton
 End Class

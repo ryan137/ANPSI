@@ -20,4 +20,8 @@
         jurusan.Show()
         Me.Close()
     End Sub
+
+    Private Sub namajurusan_Click(sender As Object, e As EventArgs) Handles namajurusan.Click
+
+    End Sub
 End Class
