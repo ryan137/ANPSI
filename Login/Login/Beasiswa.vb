@@ -21,8 +21,6 @@
     End Sub
 
     Private Sub MaterialRaisedButton1_Click(sender As Object, e As EventArgs) Handles MaterialRaisedButton1.Click
-
-
         MessageBox.Show(dal.insertbeasiswa(nama.Text, bpp.Text, sks.Text))
         isidgv()
     End Sub
@@ -36,5 +34,9 @@
             MessageBox.Show(dal.deletebeasiswa(DataGridView1.Rows(DataGridView1.CurrentRow.Index).Cells.Item("beasiswa_id").Value))
             isidgv()
         End If
+    End Sub
+
+    Private Sub MaterialRaisedButton2_Click(sender As Object, e As EventArgs) Handles MaterialRaisedButton2.Click
+
     End Sub
 End Class
