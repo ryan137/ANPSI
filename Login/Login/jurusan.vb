@@ -13,8 +13,7 @@
         Button.Name = " "
         DataGridView1.Columns.Add(Button)
         DataGridView1.Columns.Add(Button1)
-
-
+        DataGridView1.Columns.Item("jurusan_id").Visible = False
     End Sub
 
     Public Sub isidgv()
@@ -25,17 +24,8 @@
 
     End Sub
 
-    Private Sub DataGridView1_CellClick(sender As Object, e As DataGridViewCellEventArgs)
 
-    End Sub
 
-    Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs)
-
-    End Sub
-
-    Private Sub DataGridView1_CellContentClick_1(sender As Object, e As DataGridViewCellEventArgs)
-
-    End Sub
 
     Private Sub namajurusan_Click(sender As Object, e As EventArgs) Handles namajurusan.Click
 
@@ -46,9 +36,28 @@
     End Sub
 
     Private Sub MaterialFlatButton2_Click(sender As Object, e As EventArgs) Handles MaterialFlatButton2.Click
+        Dim insert As New insertjurusan
+        insert.Show()
+        Me.Close()
     End Sub
 
     Private Sub MaterialFlatButton1_Click(sender As Object, e As EventArgs) Handles MaterialFlatButton1.Click
+        Dim su As New SUMenu
+        su.Show()
+        Me.Close()
+    End Sub
 
+
+
+    Private Sub DataGridView1_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellClick
+        If DataGridView1.Columns(e.ColumnIndex).Name = " " Then
+            Dim edit As New editjurusan
+            edit.id = DataGridView1.Rows(DataGridView1.CurrentRow.Index).Cells.Item("jurusan_id").Value
+            edit.Show()
+            Me.Close()
+        ElseIf DataGridView1.Columns(e.ColumnIndex).Name = "  " Then
+            MessageBox.Show(dal.deletejurusan(DataGridView1.Rows(DataGridView1.CurrentRow.Index).Cells.Item("jurusan_id").Value))
+            isidgv()
+        End If
     End Sub
 End Class
