@@ -1,6 +1,6 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
 Partial Class EditBeasiswa
-    Inherits System.Windows.Forms.Form
+    Inherits MaterialSkin.Controls.MaterialForm
 
     'Form overrides dispose to clean up the component list.
     <System.Diagnostics.DebuggerNonUserCode()> _
@@ -35,10 +35,11 @@ Partial Class EditBeasiswa
         'MaterialLabel1
         '
         Me.MaterialLabel1.AutoSize = True
+        Me.MaterialLabel1.BackColor = System.Drawing.Color.White
         Me.MaterialLabel1.Depth = 0
         Me.MaterialLabel1.Font = New System.Drawing.Font("Roboto", 11.0!)
         Me.MaterialLabel1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.MaterialLabel1.Location = New System.Drawing.Point(12, 22)
+        Me.MaterialLabel1.Location = New System.Drawing.Point(12, 76)
         Me.MaterialLabel1.MouseState = MaterialSkin.MouseState.HOVER
         Me.MaterialLabel1.Name = "MaterialLabel1"
         Me.MaterialLabel1.Size = New System.Drawing.Size(49, 19)
@@ -48,10 +49,11 @@ Partial Class EditBeasiswa
         'MaterialLabel2
         '
         Me.MaterialLabel2.AutoSize = True
+        Me.MaterialLabel2.BackColor = System.Drawing.Color.White
         Me.MaterialLabel2.Depth = 0
         Me.MaterialLabel2.Font = New System.Drawing.Font("Roboto", 11.0!)
         Me.MaterialLabel2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.MaterialLabel2.Location = New System.Drawing.Point(12, 62)
+        Me.MaterialLabel2.Location = New System.Drawing.Point(12, 116)
         Me.MaterialLabel2.MouseState = MaterialSkin.MouseState.HOVER
         Me.MaterialLabel2.Name = "MaterialLabel2"
         Me.MaterialLabel2.Size = New System.Drawing.Size(88, 19)
@@ -61,10 +63,11 @@ Partial Class EditBeasiswa
         'MaterialLabel3
         '
         Me.MaterialLabel3.AutoSize = True
+        Me.MaterialLabel3.BackColor = System.Drawing.Color.White
         Me.MaterialLabel3.Depth = 0
         Me.MaterialLabel3.Font = New System.Drawing.Font("Roboto", 11.0!)
         Me.MaterialLabel3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.MaterialLabel3.Location = New System.Drawing.Point(12, 105)
+        Me.MaterialLabel3.Location = New System.Drawing.Point(12, 159)
         Me.MaterialLabel3.MouseState = MaterialSkin.MouseState.HOVER
         Me.MaterialLabel3.Name = "MaterialLabel3"
         Me.MaterialLabel3.Size = New System.Drawing.Size(88, 19)
@@ -73,9 +76,11 @@ Partial Class EditBeasiswa
         '
         'nama
         '
+        Me.nama.BackColor = System.Drawing.Color.White
         Me.nama.Depth = 0
         Me.nama.Hint = ""
-        Me.nama.Location = New System.Drawing.Point(119, 18)
+        Me.nama.Location = New System.Drawing.Point(119, 72)
+        Me.nama.MaxLength = 32767
         Me.nama.MouseState = MaterialSkin.MouseState.HOVER
         Me.nama.Name = "nama"
         Me.nama.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -84,13 +89,16 @@ Partial Class EditBeasiswa
         Me.nama.SelectionStart = 0
         Me.nama.Size = New System.Drawing.Size(305, 23)
         Me.nama.TabIndex = 3
+        Me.nama.TabStop = False
         Me.nama.UseSystemPasswordChar = False
         '
         'bpp
         '
+        Me.bpp.BackColor = System.Drawing.Color.White
         Me.bpp.Depth = 0
         Me.bpp.Hint = ""
-        Me.bpp.Location = New System.Drawing.Point(119, 58)
+        Me.bpp.Location = New System.Drawing.Point(119, 112)
+        Me.bpp.MaxLength = 32767
         Me.bpp.MouseState = MaterialSkin.MouseState.HOVER
         Me.bpp.Name = "bpp"
         Me.bpp.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -99,13 +107,16 @@ Partial Class EditBeasiswa
         Me.bpp.SelectionStart = 0
         Me.bpp.Size = New System.Drawing.Size(305, 23)
         Me.bpp.TabIndex = 4
+        Me.bpp.TabStop = False
         Me.bpp.UseSystemPasswordChar = False
         '
         'sks
         '
+        Me.sks.BackColor = System.Drawing.Color.White
         Me.sks.Depth = 0
         Me.sks.Hint = ""
-        Me.sks.Location = New System.Drawing.Point(119, 102)
+        Me.sks.Location = New System.Drawing.Point(119, 156)
+        Me.sks.MaxLength = 32767
         Me.sks.MouseState = MaterialSkin.MouseState.HOVER
         Me.sks.Name = "sks"
         Me.sks.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -114,28 +125,35 @@ Partial Class EditBeasiswa
         Me.sks.SelectionStart = 0
         Me.sks.Size = New System.Drawing.Size(305, 23)
         Me.sks.TabIndex = 5
+        Me.sks.TabStop = False
         Me.sks.UseSystemPasswordChar = False
         '
         'MaterialRaisedButton1
         '
+        Me.MaterialRaisedButton1.AutoSize = True
+        Me.MaterialRaisedButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.MaterialRaisedButton1.Depth = 0
-        Me.MaterialRaisedButton1.Location = New System.Drawing.Point(336, 153)
+        Me.MaterialRaisedButton1.Icon = Nothing
+        Me.MaterialRaisedButton1.Location = New System.Drawing.Point(374, 185)
         Me.MaterialRaisedButton1.MouseState = MaterialSkin.MouseState.HOVER
         Me.MaterialRaisedButton1.Name = "MaterialRaisedButton1"
         Me.MaterialRaisedButton1.Primary = True
-        Me.MaterialRaisedButton1.Size = New System.Drawing.Size(75, 23)
+        Me.MaterialRaisedButton1.Size = New System.Drawing.Size(50, 36)
         Me.MaterialRaisedButton1.TabIndex = 6
         Me.MaterialRaisedButton1.Text = "Edit"
         Me.MaterialRaisedButton1.UseVisualStyleBackColor = True
         '
         'MaterialRaisedButton2
         '
+        Me.MaterialRaisedButton2.AutoSize = True
+        Me.MaterialRaisedButton2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.MaterialRaisedButton2.Depth = 0
-        Me.MaterialRaisedButton2.Location = New System.Drawing.Point(188, 153)
+        Me.MaterialRaisedButton2.Icon = Nothing
+        Me.MaterialRaisedButton2.Location = New System.Drawing.Point(12, 185)
         Me.MaterialRaisedButton2.MouseState = MaterialSkin.MouseState.HOVER
         Me.MaterialRaisedButton2.Name = "MaterialRaisedButton2"
         Me.MaterialRaisedButton2.Primary = True
-        Me.MaterialRaisedButton2.Size = New System.Drawing.Size(75, 23)
+        Me.MaterialRaisedButton2.Size = New System.Drawing.Size(56, 36)
         Me.MaterialRaisedButton2.TabIndex = 7
         Me.MaterialRaisedButton2.Text = "Back"
         Me.MaterialRaisedButton2.UseVisualStyleBackColor = True
@@ -144,7 +162,8 @@ Partial Class EditBeasiswa
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(467, 261)
+        Me.BackColor = System.Drawing.Color.White
+        Me.ClientSize = New System.Drawing.Size(438, 238)
         Me.Controls.Add(Me.MaterialRaisedButton2)
         Me.Controls.Add(Me.MaterialRaisedButton1)
         Me.Controls.Add(Me.sks)
