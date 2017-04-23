@@ -1,8 +1,6 @@
 ﻿Public Class User
     Dim dal As New DAL
-    Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
 
-    End Sub
 
     Private Sub User_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         isidgv()
@@ -39,7 +37,7 @@
             edit.Show()
             Me.Close()
         ElseIf DataGridView1.Columns(e.ColumnIndex).Name = "  " Then
-            MessageBox.Show(dal.deletejurusan(DataGridView1.Rows(DataGridView1.CurrentRow.Index).Cells.Item("user_id").Value))
+            MessageBox.Show(dal.deleteuser(DataGridView1.Rows(DataGridView1.CurrentRow.Index).Cells.Item("user_id").Value))
             isidgv()
         End If
     End Sub

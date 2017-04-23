@@ -35,13 +35,13 @@
 
     End Sub
 
-    Private Sub MaterialFlatButton2_Click(sender As Object, e As EventArgs) Handles MaterialFlatButton2.Click
+    Private Sub MaterialFlatButton2_Click(sender As Object, e As EventArgs)
         Dim insert As New insertjurusan
         insert.Show()
         Me.Close()
     End Sub
 
-    Private Sub MaterialFlatButton1_Click(sender As Object, e As EventArgs) Handles MaterialFlatButton1.Click
+    Private Sub MaterialFlatButton1_Click(sender As Object, e As EventArgs)
         Dim su As New SUMenu
         su.Show()
         Me.Close()
@@ -59,5 +59,25 @@
             MessageBox.Show(dal.deletejurusan(DataGridView1.Rows(DataGridView1.CurrentRow.Index).Cells.Item("jurusan_id").Value))
             isidgv()
         End If
+    End Sub
+
+    Private Sub MaterialFlatButton3_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub MaterialRaisedButton3_Click(sender As Object, e As EventArgs) Handles MaterialRaisedButton3.Click
+        Dim insert As New insertjurusan
+        insert.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub MaterialRaisedButton2_Click(sender As Object, e As EventArgs) Handles MaterialRaisedButton2.Click
+        Dim su As New SUMenu
+        su.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub MaterialRaisedButton1_Click(sender As Object, e As EventArgs) Handles MaterialRaisedButton1.Click
+
     End Sub
 End Class
