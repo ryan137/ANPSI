@@ -1,5 +1,6 @@
 ﻿Public Class Sekolah
     Dim dal As New DAL
+
     Private Sub Sekolah_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         isidgv()
         Dim Button As New DataGridViewButtonColumn()
@@ -19,8 +20,6 @@
         Dim data As DataSet
         data = dal.getallsekolah()
         DataGridView1.DataSource = data.Tables(0)
-
-
     End Sub
 
     Private Sub MaterialRaisedButton3_Click(sender As Object, e As EventArgs) Handles MaterialRaisedButton3.Click

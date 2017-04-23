@@ -22,13 +22,41 @@ Partial Class EditSekolah
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.MaterialLabel4 = New MaterialSkin.Controls.MaterialLabel()
+        Me.MaterialLabel3 = New MaterialSkin.Controls.MaterialLabel()
         Me.MaterialRaisedButton2 = New MaterialSkin.Controls.MaterialRaisedButton()
+        Me.alamat = New MaterialSkin.Controls.MaterialSingleLineTextField()
+        Me.nama = New MaterialSkin.Controls.MaterialSingleLineTextField()
         Me.MaterialRaisedButton1 = New MaterialSkin.Controls.MaterialRaisedButton()
-        Me.alamatsekolah = New MaterialSkin.Controls.MaterialSingleLineTextField()
-        Me.namasekolah = New MaterialSkin.Controls.MaterialSingleLineTextField()
-        Me.kode = New MaterialSkin.Controls.MaterialLabel()
-        Me.nama = New MaterialSkin.Controls.MaterialLabel()
+        Me.MaterialLabel2 = New MaterialSkin.Controls.MaterialLabel()
+        Me.MaterialLabel1 = New MaterialSkin.Controls.MaterialLabel()
         Me.SuspendLayout()
+        '
+        'MaterialLabel4
+        '
+        Me.MaterialLabel4.AutoSize = True
+        Me.MaterialLabel4.Depth = 0
+        Me.MaterialLabel4.Font = New System.Drawing.Font("Roboto", 11.0!)
+        Me.MaterialLabel4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.MaterialLabel4.Location = New System.Drawing.Point(67, 116)
+        Me.MaterialLabel4.MouseState = MaterialSkin.MouseState.HOVER
+        Me.MaterialLabel4.Name = "MaterialLabel4"
+        Me.MaterialLabel4.Size = New System.Drawing.Size(13, 19)
+        Me.MaterialLabel4.TabIndex = 15
+        Me.MaterialLabel4.Text = ":"
+        '
+        'MaterialLabel3
+        '
+        Me.MaterialLabel3.AutoSize = True
+        Me.MaterialLabel3.Depth = 0
+        Me.MaterialLabel3.Font = New System.Drawing.Font("Roboto", 11.0!)
+        Me.MaterialLabel3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.MaterialLabel3.Location = New System.Drawing.Point(67, 76)
+        Me.MaterialLabel3.MouseState = MaterialSkin.MouseState.HOVER
+        Me.MaterialLabel3.Name = "MaterialLabel3"
+        Me.MaterialLabel3.Size = New System.Drawing.Size(13, 19)
+        Me.MaterialLabel3.TabIndex = 14
+        Me.MaterialLabel3.Text = ":"
         '
         'MaterialRaisedButton2
         '
@@ -36,14 +64,48 @@ Partial Class EditSekolah
         Me.MaterialRaisedButton2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.MaterialRaisedButton2.Depth = 0
         Me.MaterialRaisedButton2.Icon = Nothing
-        Me.MaterialRaisedButton2.Location = New System.Drawing.Point(16, 141)
+        Me.MaterialRaisedButton2.Location = New System.Drawing.Point(12, 145)
         Me.MaterialRaisedButton2.MouseState = MaterialSkin.MouseState.HOVER
         Me.MaterialRaisedButton2.Name = "MaterialRaisedButton2"
         Me.MaterialRaisedButton2.Primary = True
         Me.MaterialRaisedButton2.Size = New System.Drawing.Size(56, 36)
-        Me.MaterialRaisedButton2.TabIndex = 24
-        Me.MaterialRaisedButton2.Text = "Back"
+        Me.MaterialRaisedButton2.TabIndex = 13
+        Me.MaterialRaisedButton2.Text = "back"
         Me.MaterialRaisedButton2.UseVisualStyleBackColor = True
+        '
+        'alamat
+        '
+        Me.alamat.Depth = 0
+        Me.alamat.Hint = ""
+        Me.alamat.Location = New System.Drawing.Point(92, 116)
+        Me.alamat.MaxLength = 32767
+        Me.alamat.MouseState = MaterialSkin.MouseState.HOVER
+        Me.alamat.Name = "alamat"
+        Me.alamat.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.alamat.SelectedText = ""
+        Me.alamat.SelectionLength = 0
+        Me.alamat.SelectionStart = 0
+        Me.alamat.Size = New System.Drawing.Size(180, 23)
+        Me.alamat.TabIndex = 12
+        Me.alamat.TabStop = False
+        Me.alamat.UseSystemPasswordChar = False
+        '
+        'nama
+        '
+        Me.nama.Depth = 0
+        Me.nama.Hint = ""
+        Me.nama.Location = New System.Drawing.Point(92, 76)
+        Me.nama.MaxLength = 32767
+        Me.nama.MouseState = MaterialSkin.MouseState.HOVER
+        Me.nama.Name = "nama"
+        Me.nama.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.nama.SelectedText = ""
+        Me.nama.SelectionLength = 0
+        Me.nama.SelectionStart = 0
+        Me.nama.Size = New System.Drawing.Size(180, 23)
+        Me.nama.TabIndex = 11
+        Me.nama.TabStop = False
+        Me.nama.UseSystemPasswordChar = False
         '
         'MaterialRaisedButton1
         '
@@ -51,91 +113,55 @@ Partial Class EditSekolah
         Me.MaterialRaisedButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.MaterialRaisedButton1.Depth = 0
         Me.MaterialRaisedButton1.Icon = Nothing
-        Me.MaterialRaisedButton1.Location = New System.Drawing.Point(289, 141)
+        Me.MaterialRaisedButton1.Location = New System.Drawing.Point(222, 145)
         Me.MaterialRaisedButton1.MouseState = MaterialSkin.MouseState.HOVER
         Me.MaterialRaisedButton1.Name = "MaterialRaisedButton1"
         Me.MaterialRaisedButton1.Primary = True
         Me.MaterialRaisedButton1.Size = New System.Drawing.Size(50, 36)
-        Me.MaterialRaisedButton1.TabIndex = 23
-        Me.MaterialRaisedButton1.Text = "EDIT"
+        Me.MaterialRaisedButton1.TabIndex = 10
+        Me.MaterialRaisedButton1.Text = "Edit"
         Me.MaterialRaisedButton1.UseVisualStyleBackColor = True
         '
-        'alamatsekolah
+        'MaterialLabel2
         '
-        Me.alamatsekolah.BackColor = System.Drawing.Color.White
-        Me.alamatsekolah.Depth = 0
-        Me.alamatsekolah.Hint = ""
-        Me.alamatsekolah.Location = New System.Drawing.Point(145, 112)
-        Me.alamatsekolah.MaxLength = 32767
-        Me.alamatsekolah.MouseState = MaterialSkin.MouseState.HOVER
-        Me.alamatsekolah.Name = "alamatsekolah"
-        Me.alamatsekolah.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.alamatsekolah.SelectedText = ""
-        Me.alamatsekolah.SelectionLength = 0
-        Me.alamatsekolah.SelectionStart = 0
-        Me.alamatsekolah.Size = New System.Drawing.Size(193, 23)
-        Me.alamatsekolah.TabIndex = 22
-        Me.alamatsekolah.TabStop = False
-        Me.alamatsekolah.UseSystemPasswordChar = False
+        Me.MaterialLabel2.AutoSize = True
+        Me.MaterialLabel2.Depth = 0
+        Me.MaterialLabel2.Font = New System.Drawing.Font("Roboto", 11.0!)
+        Me.MaterialLabel2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.MaterialLabel2.Location = New System.Drawing.Point(12, 116)
+        Me.MaterialLabel2.MouseState = MaterialSkin.MouseState.HOVER
+        Me.MaterialLabel2.Name = "MaterialLabel2"
+        Me.MaterialLabel2.Size = New System.Drawing.Size(65, 19)
+        Me.MaterialLabel2.TabIndex = 9
+        Me.MaterialLabel2.Text = "Alamat :"
         '
-        'namasekolah
+        'MaterialLabel1
         '
-        Me.namasekolah.BackColor = System.Drawing.Color.White
-        Me.namasekolah.Depth = 0
-        Me.namasekolah.Hint = ""
-        Me.namasekolah.Location = New System.Drawing.Point(145, 76)
-        Me.namasekolah.MaxLength = 32767
-        Me.namasekolah.MouseState = MaterialSkin.MouseState.HOVER
-        Me.namasekolah.Name = "namasekolah"
-        Me.namasekolah.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.namasekolah.SelectedText = ""
-        Me.namasekolah.SelectionLength = 0
-        Me.namasekolah.SelectionStart = 0
-        Me.namasekolah.Size = New System.Drawing.Size(194, 23)
-        Me.namasekolah.TabIndex = 21
-        Me.namasekolah.TabStop = False
-        Me.namasekolah.UseSystemPasswordChar = False
-        '
-        'kode
-        '
-        Me.kode.AutoSize = True
-        Me.kode.BackColor = System.Drawing.Color.White
-        Me.kode.Depth = 0
-        Me.kode.Font = New System.Drawing.Font("Roboto", 11.0!)
-        Me.kode.ForeColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.kode.Location = New System.Drawing.Point(12, 112)
-        Me.kode.MouseState = MaterialSkin.MouseState.HOVER
-        Me.kode.Name = "kode"
-        Me.kode.Size = New System.Drawing.Size(65, 19)
-        Me.kode.TabIndex = 20
-        Me.kode.Text = "Alamat :"
-        '
-        'nama
-        '
-        Me.nama.AutoSize = True
-        Me.nama.BackColor = System.Drawing.Color.White
-        Me.nama.Depth = 0
-        Me.nama.Font = New System.Drawing.Font("Roboto", 11.0!)
-        Me.nama.ForeColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.nama.Location = New System.Drawing.Point(12, 73)
-        Me.nama.MouseState = MaterialSkin.MouseState.HOVER
-        Me.nama.Name = "nama"
-        Me.nama.Size = New System.Drawing.Size(115, 19)
-        Me.nama.TabIndex = 19
-        Me.nama.Text = "Nama Sekolah :"
+        Me.MaterialLabel1.AutoSize = True
+        Me.MaterialLabel1.Depth = 0
+        Me.MaterialLabel1.Font = New System.Drawing.Font("Roboto", 11.0!)
+        Me.MaterialLabel1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.MaterialLabel1.Location = New System.Drawing.Point(12, 76)
+        Me.MaterialLabel1.MouseState = MaterialSkin.MouseState.HOVER
+        Me.MaterialLabel1.Name = "MaterialLabel1"
+        Me.MaterialLabel1.Size = New System.Drawing.Size(49, 19)
+        Me.MaterialLabel1.TabIndex = 8
+        Me.MaterialLabel1.Text = "Nama"
         '
         'EditSekolah
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(350, 185)
+        Me.ClientSize = New System.Drawing.Size(284, 191)
+        Me.Controls.Add(Me.MaterialLabel4)
+        Me.Controls.Add(Me.MaterialLabel3)
         Me.Controls.Add(Me.MaterialRaisedButton2)
-        Me.Controls.Add(Me.MaterialRaisedButton1)
-        Me.Controls.Add(Me.alamatsekolah)
-        Me.Controls.Add(Me.namasekolah)
-        Me.Controls.Add(Me.kode)
+        Me.Controls.Add(Me.alamat)
         Me.Controls.Add(Me.nama)
+        Me.Controls.Add(Me.MaterialRaisedButton1)
+        Me.Controls.Add(Me.MaterialLabel2)
+        Me.Controls.Add(Me.MaterialLabel1)
         Me.Name = "EditSekolah"
         Me.Text = "EditSekolah"
         Me.ResumeLayout(False)
@@ -143,10 +169,12 @@ Partial Class EditSekolah
 
     End Sub
 
+    Friend WithEvents MaterialLabel4 As MaterialSkin.Controls.MaterialLabel
+    Friend WithEvents MaterialLabel3 As MaterialSkin.Controls.MaterialLabel
     Friend WithEvents MaterialRaisedButton2 As MaterialSkin.Controls.MaterialRaisedButton
+    Friend WithEvents alamat As MaterialSkin.Controls.MaterialSingleLineTextField
+    Friend WithEvents nama As MaterialSkin.Controls.MaterialSingleLineTextField
     Friend WithEvents MaterialRaisedButton1 As MaterialSkin.Controls.MaterialRaisedButton
-    Friend WithEvents alamatsekolah As MaterialSkin.Controls.MaterialSingleLineTextField
-    Friend WithEvents namasekolah As MaterialSkin.Controls.MaterialSingleLineTextField
-    Friend WithEvents kode As MaterialSkin.Controls.MaterialLabel
-    Friend WithEvents nama As MaterialSkin.Controls.MaterialLabel
+    Friend WithEvents MaterialLabel2 As MaterialSkin.Controls.MaterialLabel
+    Friend WithEvents MaterialLabel1 As MaterialSkin.Controls.MaterialLabel
 End Class

@@ -123,7 +123,7 @@ Partial Class SUMenu
         Me.MaterialFlatButton6.Primary = False
         Me.MaterialFlatButton6.Size = New System.Drawing.Size(81, 36)
         Me.MaterialFlatButton6.TabIndex = 5
-        Me.MaterialFlatButton6.Text = "SEKOLAH"
+        Me.MaterialFlatButton6.Text = "Sekolah"
         Me.MaterialFlatButton6.UseVisualStyleBackColor = True
         '
         'SUMenu

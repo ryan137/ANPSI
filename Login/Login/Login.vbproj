@@ -116,6 +116,12 @@
     <Compile Include="EditNilaiTest.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="EditSekolah.Designer.vb">
+      <DependentUpon>EditSekolah.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EditSekolah.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="edituser.Designer.vb">
       <DependentUpon>edituser.vb</DependentUpon>
     </Compile>
@@ -145,6 +151,12 @@
       <DependentUpon>InsertNilaiTest.vb</DependentUpon>
     </Compile>
     <Compile Include="InsertNilaiTest.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsertSekolah.Designer.vb">
+      <DependentUpon>InsertSekolah.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InsertSekolah.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="jurusan.Designer.vb">
@@ -180,6 +192,12 @@
     <Compile Include="NilaiTest.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Sekolah.Designer.vb">
+      <DependentUpon>Sekolah.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sekolah.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="SUMenu.Designer.vb">
       <DependentUpon>SUMenu.vb</DependentUpon>
     </Compile>
@@ -209,6 +227,9 @@
     <EmbeddedResource Include="EditNilaiTest.resx">
       <DependentUpon>EditNilaiTest.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="EditSekolah.resx">
+      <DependentUpon>EditSekolah.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="edituser.resx">
       <DependentUpon>edituser.vb</DependentUpon>
     </EmbeddedResource>
@@ -224,6 +245,9 @@
     <EmbeddedResource Include="InsertNilaiTest.resx">
       <DependentUpon>InsertNilaiTest.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="InsertSekolah.resx">
+      <DependentUpon>InsertSekolah.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="jurusan.resx">
       <DependentUpon>jurusan.vb</DependentUpon>
     </EmbeddedResource>
@@ -238,6 +262,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="NilaiTest.resx">
       <DependentUpon>NilaiTest.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sekolah.resx">
+      <DependentUpon>Sekolah.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SUMenu.resx">
       <DependentUpon>SUMenu.vb</DependentUpon>

@@ -120,9 +120,9 @@ Partial Class InsertSekolah
         Me.nama.Location = New System.Drawing.Point(12, 73)
         Me.nama.MouseState = MaterialSkin.MouseState.HOVER
         Me.nama.Name = "nama"
-        Me.nama.Size = New System.Drawing.Size(115, 19)
+        Me.nama.Size = New System.Drawing.Size(57, 19)
         Me.nama.TabIndex = 13
-        Me.nama.Text = "Nama Sekolah :"
+        Me.nama.Text = "Nama :"
         '
         'InsertSekolah
         '
