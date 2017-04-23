@@ -19,15 +19,15 @@ Public Class DAL
         Try
             If command.ExecuteNonQuery > 0 Then
                 closeconnection()
-                Return "sukse insert"
+                Return "Sukses insert"
             Else
                 closeconnection()
-                Return "gagal insert"
+                Return "Gagal insert"
             End If
         Catch ex As MySqlException
 
             closeconnection()
-                Return "sukse insert"
+            Return "Gagal insert"
 
         End Try
 
@@ -37,13 +37,20 @@ Public Class DAL
         Dim command As New MySqlCommand
         command.Connection = openconnection()
         command.CommandText = "update jurusan set jurusan_nama='" & nama & "', jurusan_kode = '" & kode & "' where jurusan_id ='" & id & "'"
-        If command.ExecuteNonQuery > 0 Then
+        Try
+            If command.ExecuteNonQuery > 0 Then
+                closeconnection()
+                Return "Sukses insert"
+            Else
+                closeconnection()
+                Return "Gagal insert"
+            End If
+        Catch ex As MySqlException
+
             closeconnection()
-            Return "sukses update"
-        Else
-            closeconnection()
-            Return "gagal update"
-        End If
+            Return "Gagal insert"
+
+        End Try
     End Function
 
     Public Function deletejurusan(ByVal id As String)
@@ -52,10 +59,10 @@ Public Class DAL
         command.CommandText = "delete from jurusan where jurusan_id='" & id & "' "
         If command.ExecuteNonQuery > 0 Then
             closeconnection()
-            Return "sukses hapus"
+            Return "Sukses hapus"
         Else
             closeconnection()
-            Return "gagal hapus"
+            Return "Gagal hapus"
         End If
     End Function
 
