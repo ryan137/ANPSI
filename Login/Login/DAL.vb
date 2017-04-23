@@ -218,6 +218,53 @@ Public Class DAL
         End If
     End Function
 
+    Public Function insertsekolah(ByVal nama As String, ByVal alamat As String)
+        Dim command As New MySqlCommand
+        command.Connection = openconnection()
+        command.CommandText = "insert into sekolah values('','" & nama & "','" & alamat & "')"
+
+        Try
+            If command.ExecuteNonQuery > 0 Then
+                closeconnection()
+                Return "sukses insert"
+            Else
+                closeconnection()
+                Return "gagal insert"
+            End If
+        Catch ex As MySqlException
+
+            closeconnection()
+            Return "sukses insert"
+
+        End Try
+
+    End Function
+
+    Public Function updatesekolah(ByVal id As String, ByVal nama As String, ByVal alamat As String)
+        Dim command As New MySqlCommand
+        command.Connection = openconnection()
+        command.CommandText = "update sekolah set sekolah_nama='" & nama & "', sekolah_alamat = '" & alamat & "' where sekolah_id ='" & id & "'"
+        If command.ExecuteNonQuery > 0 Then
+            closeconnection()
+            Return "sukses update"
+        Else
+            closeconnection()
+            Return "gagal update"
+        End If
+    End Function
+
+    Public Function deletesekolah(ByVal id As String)
+        Dim command As New MySqlCommand
+        command.Connection = openconnection()
+        command.CommandText = "delete from sekolah where sekolah_id='" & id & "' "
+        If command.ExecuteNonQuery > 0 Then
+            closeconnection()
+            Return "sukses hapus"
+        Else
+            closeconnection()
+            Return "gagal hapus"
+        End If
+    End Function
 
     Public Function getallsekolah()
         Dim command As New MySqlCommand
